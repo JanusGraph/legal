@@ -1,0 +1,16 @@
+# This file will be used for recording CLA signatures for automatic
+# verification.
+#
+# DO NOT submit pull requests to sign an ICLA/CCLA for the first time.
+#
+# This file is only used for the following purposes:
+#
+# * record existing ICLA / CCLA signatures (via signed PDF process)
+# * amend existing ICLA signatures, e.g., to update email address
+# * amend existing CCLA authorized contributors list by an authorized
+#   organization representative, e.g., to add/remove members
+
+people:
+  - name: Hentry Saputra
+    email: hsaputra@apache.org
+    github: hsaputra
