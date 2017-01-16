@@ -1,0 +1,32 @@
+# http://editorconfig.org
+
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+[*.java]
+indent_style = space
+indent_size = 4
+
+[*.md]
+indent_style = space
+indent_size = 2
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.xml,*.xslt]
+indent_style = space
+indent_size = 4
+
+[*.yaml]
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+indent_size = 1
