@@ -7,13 +7,12 @@ contributions as part of the project.
 
 * If you are an individual writing original source code and you're sure you own
   the intellectual property, then you'll need to sign an
-  [individual CLA](https://github.com/JanusGraph/legal/blob/master/JanusGraph_ICLA_1.0.pdf).
+  [individual CLA](JanusGraph_ICLA_1.0.pdf).
 
 * If you work for a company or another organization that may have claim to
   intellectual property you may produce, and the organization wants to allow you
   to contribute your work, then an authorized representative of the organization
-  will need to sign a
-  [corporate CLA](https://github.com/JanusGraph/legal/blob/master/JanusGraph_CCLA_1.0.pdf).
+  will need to sign a [corporate CLA](JanusGraph_CCLA_1.0.pdf).
 
 **IMPORTANT:** DO NOT submit a pull request to this repo to sign the CLA. At
 this time, signing the CLA at this time involves filling out the ICLA or CCLA
