@@ -1,0 +1,6 @@
+# Ignore all downloaded libraries...
+*
+
+# ... with a few exceptions.
+!__init__.py
+!.gitignore
