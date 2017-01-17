@@ -1,0 +1,7 @@
+dist: trusty
+sudo: false
+language: python
+
+script:
+  - make pip-install
+  - make test
