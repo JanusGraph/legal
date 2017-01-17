@@ -20,7 +20,6 @@ endif
 PYTHON_DIR = third_party/python
 
 pip-install:
-	$(VERB) mkdir -p $(PYTHON_DIR)
 	$(VERB) pip install -r requirements.txt -t $(PYTHON_DIR)
 
 yaml-check:
