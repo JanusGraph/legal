@@ -20,3 +20,26 @@ people:
   - name: Robert Dale
     email: robdale@gmail.com
     github: robertdale
+
+companies:
+
+  - name: Expero
+    people:
+      - name: Sebastian Good
+        email: sebastian@experoinc.com
+        github: sebastiang
+      - name: Ted Wilmes
+        email: ted.wilmes@experoinc.com
+        github: twilmes
+      - name: Chad Huff
+        email: chadhuff@experoinc.com
+        github: chadthehuff
+      - name: David Bechberger
+        email: dave@experoinc.com
+        github: bechbd
+      - name: Michael Downie
+        email: michae.downie@experoinc.com
+        github: michaeldownie-expero
+      - name: Josh Perryman
+        email: josh@experoinc.com
+        github: joshpci
