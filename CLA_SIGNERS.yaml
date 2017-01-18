@@ -43,3 +43,27 @@ companies:
       - name: Josh Perryman
         email: josh@experoinc.com
         github: joshpci
+
+  - name: GRAKN.AI
+    people:
+      - name: Haikal Pribadi
+        email: haikal@grakn.ai
+        github: haikalpribadi
+      - name: Borislav Iordanov
+        email: borislav@haikal.ai
+        github: bolerio
+      - name: Filipe Peliz Pinto Teixeira
+        email: filipe@grakn.ai
+        github: fppt
+      - name: Felix Chapman
+        email: felix@grakn.ai
+        github: aelred
+      - name: Sheldon Hall
+        email: sheldon@grakn.ai
+        github: sheldonkhall
+      - name: Jason Liu
+        email: jason@grakn.ai
+        github: duckofyork
+      - name: Kasper Piskorski
+        email: kasper@grakn.ai
+        github: kasper-piskorski
