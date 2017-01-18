@@ -67,3 +67,12 @@ companies:
       - name: Kasper Piskorski
         email: kasper@grakn.ai
         github: kasper-piskorski
+
+  - name: Hortonworks
+    people:
+      - name: P. Taylor Goetz
+        email: ptgoetz@gmail.com
+        github: ptgoetz
+      - name: Alan F. Gates
+        email: alanfgates@gmail.com
+        github: alanfgates
