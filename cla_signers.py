@@ -28,9 +28,31 @@ def ParseYaml(filename):
         return yaml.safe_load(yaml_input.read())
 
 
-def Validate(filename):
-    data = ParseYaml(filename)
 
+def ValidateFile(filename):
+    def ValidatePeople(people):
+        people_keys = ('name', 'email', 'github')
+        for person in people:
+            if sorted(person.keys()) != sorted(people_keys):
+                status_code = 1
+                sys.stderr.write('The only allowed and required keys for `people` are: %s.\n' % str(people_keys))
+                sys.stderr.write('Invalid person record: %s\n\n' % person)
+
+    status_code = 0
+
+    data = ParseYaml(filename)
+    ValidatePeople(data['people'])
+
+    company_keys = ('name', 'people')
+    for company in data['companies']:
+        if sorted(company.keys()) != sorted(company_keys):
+            status_code = 2
+            sys.stderr.write('The only allowed and required keys for `company` are: %s.\n' % str(company_keys))
+            sys.stderr.write('Invalid company record: %s\n\n' % company)
+            continue
+        ValidatePeople(company['people'])
+
+    return status_code
 
 def ShowSyntax(program):
     sys.stderr.write("""\
@@ -50,7 +72,7 @@ def main(argv):
     filename = argv[2]
 
     if command == 'validate':
-        Validate(filename)
+        sys.exit(ValidateFile(filename))
     else:
         sys.stderr.write('Invalid command: %s\n' % command)
         ShowSyntax(program)
