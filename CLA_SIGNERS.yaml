@@ -47,6 +47,27 @@ companies:
         email: josh@experoinc.com
         github: joshpci
 
+  - name: Google
+    people:
+      - name: Misha Brukman
+        email: mbrukman@google.com
+        github: mbrukman
+      - name: Lindsay Smith
+        email: lindsaysmith@google.com
+        github: lindsayismith
+      - name: Mike Giambalvo
+        email: heathkit@google.com
+        github: mgiambalvo
+      - name: Max Luebbe
+        email: maxluebbe@google.com
+        github: maxluebbe
+      - name: Ramesh Dharan
+        email: dharan@google.com
+        github: rameshdharan
+      - name: Gary Elliott
+        email: garyelliott@google.com
+        github: garye
+
   - name: GRAKN.AI
     people:
       - name: Haikal Pribadi

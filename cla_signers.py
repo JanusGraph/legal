@@ -31,12 +31,14 @@ def ParseYaml(filename):
 
 def ValidateFile(filename):
     def ValidatePeople(people):
+        status_code = 0
         people_keys = ('name', 'email', 'github')
         for person in people:
             if sorted(person.keys()) != sorted(people_keys):
                 status_code = 1
                 sys.stderr.write('The only allowed and required keys for `people` are: %s.\n' % str(people_keys))
                 sys.stderr.write('Invalid person record: %s\n\n' % person)
+        return status_code
 
     status_code = 0
 
@@ -50,7 +52,9 @@ def ValidateFile(filename):
             sys.stderr.write('The only allowed and required keys for `company` are: %s.\n' % str(company_keys))
             sys.stderr.write('Invalid company record: %s\n\n' % company)
             continue
-        ValidatePeople(company['people'])
+        people_status = ValidatePeople(company['people'])
+        if people_status != 0 and status_code == 0:
+            status_code = people_status
 
     return status_code
 
