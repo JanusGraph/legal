@@ -79,3 +79,18 @@ companies:
       - name: Alan F. Gates
         email: alanfgates@gmail.com
         github: alanfgates
+
+  - name: IBM
+    people:
+      - name: Jason Plurad
+        email: pluradj@us.ibm.com
+        github: pluradj
+      - name: Jerry He
+        email: jinghe@us.ibm.com
+        github: jerryjch
+      - name: Scott McQuillan
+        email: scott.mcquillan@uk.ibm.com
+        github: smcquillan
+      - name: Tanping Wang
+        email: wangta@us.ibm.com
+        github: tanping
