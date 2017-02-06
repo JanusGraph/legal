@@ -103,6 +103,9 @@ companies:
       - name: Alan F. Gates
         email: alanfgates@gmail.com
         github: alanfgates
+      - name: Simon Elliston Ball
+        email: simon@simonellistonball.com
+        github: simonellistonball
 
   - name: IBM
     people:
