@@ -121,3 +121,39 @@ companies:
       - name: Tanping Wang
         email: wangta@us.ibm.com
         github: tanping
+
+  - name: Netflix
+    people:
+      - name: Andrew Spyker
+        email: aspyker@users.noreply.github.com
+        github: aspyker
+      - name: Burak Bacioglu
+        email: burakbacioglu@yahoo.com
+        github: burakbacioglu
+      - name: Boney Sekh
+        email: boneysekh@gmail.com
+        github: boney9
+      - name: Mountu Jinwala
+        email: majinwala@gmail.com
+        github: majinwala
+      - name: Viren Baraiya
+        email: virenx@gmail.com
+        github: v1r3n
+      - name: Vikram Singh
+        email: visingh@netflix.com
+        github: vikramsingh2104
+      - name: Ioannis Papapanagiotou
+        email: Iduckhd@hotmail.com
+        github: ipapapa
+      - name: Shailesh Birari
+        email: shaileshbirari@gmail.com
+        github: shailesh33
+      - name: Vinay Chella
+        email: vinaykumarcse@gmail.com
+        github: vinaykumarchella
+      - name: Arun Agrawal
+        email: arunagrawal84@users.noreply.github.com
+        github: arunagrawal84
+      - name: Michael Figuiere
+        email: michael.figuiere@gmail.com
+        github: mfiguiere
