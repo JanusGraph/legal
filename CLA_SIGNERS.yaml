@@ -29,6 +29,12 @@ people:
 
 companies:
 
+  - name: Amazon
+    people:
+      - name: Alexander Patrikalakis
+        email: amcp@amazon.co.jp
+        github: amcp
+
   - name: Expero
     people:
       - name: Sebastian Good
