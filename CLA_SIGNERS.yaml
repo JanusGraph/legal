@@ -127,6 +127,12 @@ companies:
       - name: Tanping Wang
         email: wangta@us.ibm.com
         github: tanping
+      - name: Irving Duran
+        email: iaduran@us.ibm.com
+        github: blacknred0
+      - name: Archa Bhandare
+        email: barcha@us.ibm.com
+        github: ArchaB
 
   - name: Netflix
     people:
