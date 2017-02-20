@@ -10,28 +10,29 @@
 # * amend existing CCLA authorized contributors list by an authorized
 #   organization representative, e.g., to add/remove members
 
+# Please keep this list sorted by name.
 people:
-  - name: Hentry Saputra
-    email: hsaputra@apache.org
-    github: hsaputra
-  - name: Dylan Bethune-Waddell
-    email: dylan.bethune.waddell@mail.utoronto.ca
-    github: dylanht
-  - name: Robert Dale
-    email: robdale@gmail.com
-    github: robertdale
-  - name: Mathias Bogaert
-    email: mathias.bogaert@gmail.com
-    github: analytically
-  - name: sjudeng
-    email: sjudeng@users.noreply.github.com
-    github: sjudeng
-  - name: Rafael Fernandes
-    email: luizrafael@gmail.com
-    github: rafatuita
   - name: Den Kovalevsky
     email: xdev.developer@gmail.com
     github: xdev-developer
+  - name: Dylan Bethune-Waddell
+    email: dylan.bethune.waddell@mail.utoronto.ca
+    github: dylanht
+  - name: Hentry Saputra
+    email: hsaputra@apache.org
+    github: hsaputra
+  - name: Mathias Bogaert
+    email: mathias.bogaert@gmail.com
+    github: analytically
+  - name: Rafael Fernandes
+    email: luizrafael@gmail.com
+    github: rafatuita
+  - name: Robert Dale
+    email: robdale@gmail.com
+    github: robertdale
+  - name: sjudeng
+    email: sjudeng@users.noreply.github.com
+    github: sjudeng
 
 bots:
   # Per https://github.com/web-flow:
@@ -57,6 +58,7 @@ bots:
     email: noreply@github.com
     github: web-flow
 
+# Please keep the list sorted by company name.
 companies:
 
   - name: Amazon
