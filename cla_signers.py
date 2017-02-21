@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""TODO: High-level file comment."""
+"""Validator for the CLA signers YAML file."""
 
 import sys
 try:
@@ -30,20 +30,21 @@ def ParseYaml(filename):
 
 
 def ValidateFile(filename):
-    def ValidatePeople(people):
+    def ValidateAccounts(accounts):
         status_code = 0
-        people_keys = ('name', 'email', 'github')
-        for person in people:
-            if sorted(person.keys()) != sorted(people_keys):
+        accounts_keys = ('name', 'email', 'github')
+        for account in accounts:
+            if sorted(account.keys()) != sorted(accounts_keys):
                 status_code = 1
-                sys.stderr.write('The only allowed and required keys for `people` are: %s.\n' % str(people_keys))
-                sys.stderr.write('Invalid person record: %s\n\n' % person)
+                sys.stderr.write('The only allowed and required keys for people/bot accounts are: %s.\n' % str(accounts_keys))
+                sys.stderr.write('Invalid account record: %s\n\n' % account)
         return status_code
 
     status_code = 0
 
     data = ParseYaml(filename)
-    ValidatePeople(data['people'])
+    ValidateAccounts(data['people'])
+    ValidateAccounts(data['bots'])
 
     company_keys = ('name', 'people')
     for company in data['companies']:
@@ -52,7 +53,7 @@ def ValidateFile(filename):
             sys.stderr.write('The only allowed and required keys for `company` are: %s.\n' % str(company_keys))
             sys.stderr.write('Invalid company record: %s\n\n' % company)
             continue
-        people_status = ValidatePeople(company['people'])
+        people_status = ValidateAccounts(company['people'])
         if people_status != 0 and status_code == 0:
             status_code = people_status
 
