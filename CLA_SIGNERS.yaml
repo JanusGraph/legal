@@ -201,3 +201,12 @@ companies:
       - name: Michael Figuiere
         email: michael.figuiere@gmail.com
         github: mfiguiere
+
+  - name: Orchestral Developments
+    people:
+      - name: Paul Kendall
+        email: paul.kendall@orionhealth.com
+        github: pkendall64
+      - name: Samant Maharaj
+        email: samant.maharaj@orionhealth.com
+        github: samant-orionhealth
