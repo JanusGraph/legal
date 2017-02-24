@@ -21,6 +21,9 @@ people:
   - name: Hentry Saputra
     email: hsaputra@apache.org
     github: hsaputra
+  - name: Joern Kottmann
+    email: joern@apache.org
+    github: kottmann
   - name: Mathias Bogaert
     email: mathias.bogaert@gmail.com
     github: analytically
