@@ -168,6 +168,15 @@ companies:
       - name: Archa Bhandare
         email: barcha@us.ibm.com
         github: ArchaB
+      - name: Christopher J Quinones
+        email: cjquinon@us.ibm.com
+        github: cjquinon
+      - name: Keith Lohnes
+        email: krlohnes@us.ibm.com
+        github: krlohnes
+      - name: David Pitera
+        email: dpitera@us.ibm.com
+        github: dpitera
 
   - name: Netflix
     people:
