@@ -177,6 +177,24 @@ companies:
       - name: David Pitera
         email: dpitera@us.ibm.com
         github: dpitera
+      - name: Jun Yang
+        email: yangjuncn@cn.ibm.com
+        github: terryjoy
+      - name: Ruoyu Wang
+        email: rywang@cn.ibm.com
+        github: ruoyuw
+      - name: Hui Cao
+        email: caochch@cn.ibm.com
+        github: hugotsao
+      - name: Kaiwen Wang
+        email: wkwwang@cn.ibm.com
+        github: kevinisop
+      - name: Jian Xu
+        email: bjxujian@cn.ibm.com
+        github: bjxujian
+      - name: Hui Lin
+        email: linhui@cn.ibm.com
+        github: stone01
 
   - name: Netflix
     people:
