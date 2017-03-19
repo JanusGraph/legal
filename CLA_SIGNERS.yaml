@@ -249,3 +249,31 @@ companies:
       - name: Samant Maharaj
         email: samant.maharaj@orionhealth.com
         github: samant-orionhealth
+
+  - name: Uber
+    people:
+      # CLA Manager
+      - name: Conor Myhrvold
+        email: conor@uber.com
+        github: myhrvold
+      - name: Davide Bolcioni
+        email: dbolcion@uber.com
+        github: dbolcioni
+      - name: Alain Rodriguez
+        email: alain@uber.com
+        github: countrodrigo
+      - name: Kedar Mhaswade
+        email: kedar@uber.com
+        github: kedarmhaswade
+      - name: Chris Lu
+        email: chris.lu@gmail.com
+        github: chrilusf
+      - name: Tunay Gur
+        email: tunaygur@gmail.com
+        github: tunaygur
+      - name: Suganya Ramachandran
+        email: suganya.ramachandran@gmail.com
+        github: suganyar
+      - name: Vignesh Ganapathy
+        email: vigneshgg@gmail.com
+        github: vigneshgg
