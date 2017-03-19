@@ -196,6 +196,15 @@ companies:
         email: linhui@cn.ibm.com
         github: stone01
 
+  # Monogram can be found at:
+  # * http://metagraph.io
+  # * https://github.com/openmg
+  - name: Monogram
+    people:
+      - name: Ranger Tsao
+        email: cao.zhifu@gmail.com
+        github: boliza
+
   - name: Netflix
     people:
       - name: Andrew Spyker
