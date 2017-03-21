@@ -195,6 +195,9 @@ companies:
       - name: Hui Lin
         email: linhui@cn.ibm.com
         github: stone01
+      - name: Chin Huang
+        email: chhuang@us.ibm.com
+        github: chinhuang007
 
   # Monogram can be found at:
   # * http://metagraph.io
