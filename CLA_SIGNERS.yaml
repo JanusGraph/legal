@@ -198,6 +198,12 @@ companies:
       - name: Chin Huang
         email: chhuang@us.ibm.com
         github: chinhuang007
+      - name: Simeon Monov
+        email: sdmonov@us.ibm.com
+        github: sdmonov
+      - name: Ted Chang
+        email: htchang@us.ibm.com
+        github: tedhtchang
 
   # Monogram can be found at:
   # * http://metagraph.io
