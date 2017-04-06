@@ -78,6 +78,10 @@ companies:
       - name: Ted Wilmes
         email: ted.wilmes@experoinc.com
         github: twilmes
+      # Ted's default email address is automatically used for merges via GitHub web UI.
+      - name: Ted Wilmes
+        email: twilmes@gmail.com
+        github: twilmes
       - name: Chad Huff
         email: chadhuff@experoinc.com
         github: chadthehuff
