@@ -211,6 +211,9 @@ companies:
       - name: Ted Chang
         email: htchang@us.ibm.com
         github: tedhtchang
+      - name: Faisal Ghaffar
+        email: faisalgh@ie.ibm.com
+        github: fghaffar
 
   # Monogram can be found at:
   # * http://metagraph.io
