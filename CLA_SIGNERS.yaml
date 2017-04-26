@@ -78,6 +78,9 @@ companies:
       - name: Alexander Patrikalakis
         email: amcp@amazon.co.jp
         github: amcp
+      - name: Michael Rodaitis
+        email: rodaitis@amazon.com
+        github: mrodaitis
 
   - name: Expero
     people:
