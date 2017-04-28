@@ -308,3 +308,6 @@ companies:
       - name: Joshua Shinavier
         email: joshsh@uber.com
         github: joshsh
+      - name: Russ Frank
+        email: rf@uber.com
+        github: rf
