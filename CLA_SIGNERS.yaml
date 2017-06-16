@@ -181,9 +181,6 @@ companies:
       - name: Irving Duran
         email: iaduran@us.ibm.com
         github: blacknred0
-      - name: Archa Bhandare
-        email: barcha@us.ibm.com
-        github: ArchaB
       - name: Christopher J Quinones
         email: cjquinon@us.ibm.com
         github: cjquinon
@@ -202,9 +199,6 @@ companies:
       - name: Hui Cao
         email: caochch@cn.ibm.com
         github: hugotsao
-      - name: Kaiwen Wang
-        email: wkwwang@cn.ibm.com
-        github: kevinisop
       - name: Jian Xu
         email: bjxujian@cn.ibm.com
         github: bjxujian
@@ -223,6 +217,9 @@ companies:
       - name: Faisal Ghaffar
         email: faisalgh@ie.ibm.com
         github: fghaffar
+      - name: Adam Holley
+        email: holleya@us.ibm.com
+        github: holleyism
 
   # Monogram can be found at:
   # * http://metagraph.io
