@@ -75,12 +75,26 @@ companies:
 
   - name: Amazon
     people:
+      # CLA Manager
+      - name: Henri Yandell
+        email: hyandell@amazon.com
+        github: hyandell
+      # CLA Manager
+      - name: Brandi Duffy
+        email: brandis@amazon.com
+        github: brandis 
       - name: Alexander Patrikalakis
         email: amcp@amazon.co.jp
         github: amcp
       - name: Michael Rodaitis
         email: rodaitis@amazon.com
         github: mrodaitis
+      - name: Warren Nelson
+        email: nelwarre@amazon.com
+        github: nelsonw2014
+      - name: Ryan Meyer
+        email: ryanmeye@amazon.com
+        github: ryan1234
 
   - name: Expero
     people:
