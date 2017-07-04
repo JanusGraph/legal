@@ -183,6 +183,10 @@ companies:
       - name: Jason Plurad
         email: pluradj@us.ibm.com
         github: pluradj
+      # Alternate email address for GitHub web UI merge commits.
+      - name: Jason Plurad
+        email: pluradj@users.noreply.github.com
+        github: pluradj
       - name: Jerry He
         email: jinghe@us.ibm.com
         github: jerryjch
