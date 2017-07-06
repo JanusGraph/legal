@@ -85,9 +85,13 @@ companies:
       # CLA Manager
       - name: Brandi Duffy
         email: brandis@amazon.com
-        github: brandis 
+        github: brandis
       - name: Alexander Patrikalakis
         email: amcp@amazon.co.jp
+        github: amcp
+      # Default email used for merges via GitHub web UI.
+      - name: Alexander Patrikalakis
+        email: amcp@mit.edu
         github: amcp
       - name: Michael Rodaitis
         email: rodaitis@amazon.com
@@ -107,7 +111,7 @@ companies:
       - name: Ted Wilmes
         email: ted.wilmes@experoinc.com
         github: twilmes
-      # Ted's default email address is automatically used for merges via GitHub web UI.
+      # Default email used for merges via GitHub web UI.
       - name: Ted Wilmes
         email: twilmes@gmail.com
         github: twilmes
@@ -188,6 +192,10 @@ companies:
         github: pluradj
       - name: Jerry He
         email: jinghe@us.ibm.com
+        github: jerryjch
+      # Default email used for merges via GitHub web UI.
+      - name: Jerry He
+        email: jerryjch@apache.org
         github: jerryjch
       - name: Scott McQuillan
         email: scott.mcquillan@uk.ibm.com
