@@ -311,7 +311,7 @@ companies:
         email: conor@uber.com
         github: myhrvold
       # Alternate email address for the above to handle GitHub web UI changes
-      - name: Conor Myhrvold
+      - name: Conor L. Myhrvold
         email: myhrvold@users.noreply.github.com
         github: myhrvold
       - name: Davide Bolcioni
