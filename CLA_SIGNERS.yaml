@@ -310,6 +310,10 @@ companies:
       - name: Conor Myhrvold
         email: conor@uber.com
         github: myhrvold
+      # Alternate email address for the above to handle GitHub web UI changes
+      - name: Conor Myhrvold
+        email: myhrvold@users.noreply.github.com
+        github: myhrvold
       - name: Davide Bolcioni
         email: dbolcion@uber.com
         github: dbolcioni
