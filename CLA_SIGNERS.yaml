@@ -304,6 +304,43 @@ companies:
         email: samant.maharaj@orionhealth.com
         github: samant-orionhealth
 
+  - name: Seeq
+    people:
+      # CLA Manager
+      - name: Mark Derbecker
+        email: mark.derbecker@seeq.com
+        github: mpderbec
+      - name: Austin Sharp
+        email: austin.sharp@seeq.com
+        github: sharpau
+      - name: Ben Johnson
+        email: ben.johnson@seeq.com
+        github: deafgreatdane
+      - name: Cody Ray Hoeft
+        email: cody.ray.hoeft@seeq.com
+        github: haroldhues
+      - name: Corinne Ilvedson
+        email: corinne.ilvedson@seeq.com
+        github: cilvedson
+      - name: Dakota Kanner
+        email: dakota.kanner@seeq.com
+        github: dakkanner
+      - name: Dustin Johnson
+        email: dustin@seeq.com
+        github: dustin-johnson
+      - name: Jason Rust
+        email: jason.rust@seeq.com
+        github: jrust
+      - name: Nikhila Albert
+        email: nikhila.albert@seeq.com
+        github: totallyna
+      - name: Steffen Furholm
+        email: steffen.furholm@seeq.com
+        github: sfurholm
+      - name: Stephen Rosenthal
+        email: stephen.rosenthal@seeq.com
+        github: srosenthal
+
   - name: Uber
     people:
       # CLA Manager
