@@ -103,6 +103,13 @@ companies:
         email: ryanmeye@amazon.com
         github: ryan1234
 
+  - name: Centrifuge
+    people:
+      # CLA Manager
+      - name: Satish Kolli
+        email: satish.kolli@gmail.com
+        github: skkolli
+
   - name: Expero
     people:
       - name: Sebastian Good
