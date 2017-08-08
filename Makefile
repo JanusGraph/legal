@@ -22,7 +22,7 @@ CLA_SCRIPT = ./cla_signers.py
 CLA_SIGNERS = CLA_SIGNERS.yaml
 
 default:
-	$(VERB) echo "Available actions: stats, pip-install, test"
+	$(VERB) echo "Available actions: stats, validate, pip-install, test"
 
 stats:
 	$(VERB) $(CLA_SCRIPT) stats $(CLA_SIGNERS)
@@ -30,7 +30,7 @@ stats:
 pip-install:
 	$(VERB) pip install -r requirements.txt -t $(PYTHON_DIR)
 
-yaml-check:
+validate:
 	$(VERB) $(CLA_SCRIPT) validate $(CLA_SIGNERS)
 
-test: yaml-check
+test: validate
