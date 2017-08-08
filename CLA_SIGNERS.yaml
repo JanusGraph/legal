@@ -155,6 +155,9 @@ companies:
       - name: Gary Elliott
         email: garyelliott@google.com
         github: garye
+      - name: Igor Bernstein
+        email: igorbernstein@google.com
+        github: igorbernstein2
 
   - name: GRAKN.AI
     people:
