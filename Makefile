@@ -18,11 +18,19 @@ ifeq ($(VERBOSE),1)
 endif
 
 PYTHON_DIR = third_party/python
+CLA_SCRIPT = ./cla_signers.py
+CLA_SIGNERS = CLA_SIGNERS.yaml
+
+default:
+	$(VERB) echo "Available actions: stats, pip-install, test"
+
+stats:
+	$(VERB) $(CLA_SCRIPT) stats $(CLA_SIGNERS)
 
 pip-install:
 	$(VERB) pip install -r requirements.txt -t $(PYTHON_DIR)
 
 yaml-check:
-	$(VERB) ./cla_signers.py validate CLA_SIGNERS.yaml
+	$(VERB) $(CLA_SCRIPT) validate $(CLA_SIGNERS)
 
 test: yaml-check

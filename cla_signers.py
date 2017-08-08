@@ -28,8 +28,29 @@ def ParseYaml(filename):
         return yaml.safe_load(yaml_input.read())
 
 
+def PrintStatistics(data):
+    individuals = len(data['people'])
+    total_people = individuals
 
-def ValidateFile(filename):
+    print('Individuals: %d' % individuals)
+    companies = data['companies']
+    print('Companies: %d' % len(companies))
+    for company in companies:
+        # Several people appear more than once in the YAML config for a single
+        # company to handle multiple email addresses per person for various
+        # reasons.
+        #
+        # This eliminates overcounting by creating a set of all GitHub user ids,
+        # such that duplicate entries for a single person will be eliminated
+        # since their GitHub id is unique, even if the spelling of their name
+        # varies.
+        num_people = len(set([person['github'] for person in company['people']]))
+        print('  %s: %s' % (company['name'], num_people))
+        total_people += num_people
+
+    print('Total signers: %d' % total_people)
+
+def ValidateFile(data):
     def ValidateAccounts(accounts):
         status_code = 0
         accounts_keys = ('name', 'email', 'github')
@@ -42,7 +63,6 @@ def ValidateFile(filename):
 
     status_code = 0
 
-    data = ParseYaml(filename)
     ValidateAccounts(data['people'])
     ValidateAccounts(data['bots'])
 
@@ -75,9 +95,12 @@ def main(argv):
 
     command = argv[1]
     filename = argv[2]
+    data = ParseYaml(filename)
 
-    if command == 'validate':
-        sys.exit(ValidateFile(filename))
+    if command == 'stats':
+        sys.exit(PrintStatistics(data))
+    elif command == 'validate':
+        sys.exit(ValidateFile(data))
     else:
         sys.stderr.write('Invalid command: %s\n' % command)
         ShowSyntax(program)
