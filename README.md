@@ -25,7 +25,9 @@ Whether you sign the CCLA or the ICLA, for each contributor, please include:
 * your GitHub user id
 
 Be sure to also configure your local GitHub clone to match the name and email
-address in your CLA. See instructions below for details.
+address in your CLA. See [these
+instructions](https://github.com/JanusGraph/janusgraph/blob/master/CONTRIBUTING.md#configure-your-repo-to-match-the-cla)
+for details.
 
 For now, the process is manual; in the future, we hope to have an electronic
 method for CLA signatures which will be much easier to manage.
