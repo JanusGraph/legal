@@ -259,6 +259,9 @@ companies:
       - name: Adam Holley
         email: holleya@us.ibm.com
         github: holleyism
+      - name: Susan Malaika
+        email: malaika@us.ibm.com
+        github: sumalaika
 
   # Monogram can be found at:
   # * http://metagraph.io
