@@ -195,6 +195,13 @@ companies:
         email: simon@simonellistonball.com
         github: simonellistonball
 
+  - name: Huawei
+    people:
+      # CLA Manager
+      - name: Demai Ni
+        email: nidmgg@gmail.com
+        github: nidmgh
+
   - name: IBM
     people:
       - name: Jason Plurad
