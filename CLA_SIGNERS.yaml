@@ -48,6 +48,9 @@ people:
   - name: sjudeng
     email: sjudeng@users.noreply.github.com
     github: sjudeng
+  - name: Son Nguyen
+    email: ngocson2vn@gmail.com
+    github: ngocson2vn
 
 bots:
   # Per https://github.com/web-flow:
