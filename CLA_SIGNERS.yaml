@@ -284,6 +284,7 @@ companies:
 
   - name: Netflix
     people:
+      # CLA Manager
       - name: Andrew Spyker
         email: aspyker@users.noreply.github.com
         github: aspyker
