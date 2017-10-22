@@ -1,5 +1,10 @@
 # JanusGraph legal documents
 
+[![Build Status][travis-shield]][travis-link]
+
+[travis-shield]: https://travis-ci.org/JanusGraph/legal.svg?branch=master
+[travis-link]: https://travis-ci.org/JanusGraph/legal
+
 Before you can contribute to JanusGraph, please sign the Contributor License
 Agreement (CLA). This is not a copyright *assignment*, it simply gives the
 JanusGraph project the permission and license to use and redistribute your
