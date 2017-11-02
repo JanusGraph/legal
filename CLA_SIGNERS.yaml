@@ -325,23 +325,36 @@ companies:
         email: michael.figuiere@gmail.com
         github: mfiguiere
 
-  # Note: Newforma signed a CCLA but we did not get a complete list of emails
-  # and GitHub usernames for everyone. This list is thus incomplete, and will be
-  # updated when additional information is provided. Until then, the contributor
-  # below with complete information will have their PRs validated appropriately.
   - name: Newforma
     people:
       # CLA Manager
-      # - name: Tammy Tenney
+      - name: Tammy Tenney
+        email: ttenney@newforma.com
+        github: <missing>
       # CLA Manager
-      # - name: Patrick Filion
+      - name: Patrick Filion
+        email: pfilion@newforma.com
+        github: pfilion
+      - name: Nikolai Grigoriev
+        email: ngrigoriev@newforma.com
+        github: ngrigoriev
+      # Should be phased out in the future; Newforma requested use of
+      # @newforma.com email addresses for all employee contributions.
       - name: Nikolai Grigoriev
         email: ngrigoriev@gmail.com
         github: ngrigoriev
-      # - name: Nikita Kayurov
-      # - name: Pascal Groulx
-      # - name: Valery Viceneanschi
-      # - name: Doug Cox
+      - name: Nikita Kayurov
+        email: nkayurov@newforma.com
+        github: nkayurov-newforma
+      - name: Pascal Groulx
+        email: pgroulx@newforma.com
+        github: pgxtreme
+      - name: Valeri Vicneanschi
+        email: vvicneanschi@newforma.com
+        github: vicneanschi
+      - name: Doug Cox
+        email: dcox@newforma.com
+        github: DougC-Newforma
 
   - name: Orchestral Developments
     people:
