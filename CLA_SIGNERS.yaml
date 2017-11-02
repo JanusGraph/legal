@@ -338,11 +338,6 @@ companies:
       - name: Nikolai Grigoriev
         email: ngrigoriev@newforma.com
         github: ngrigoriev
-      # Should be phased out in the future; Newforma requested use of
-      # @newforma.com email addresses for all employee contributions.
-      - name: Nikolai Grigoriev
-        email: ngrigoriev@gmail.com
-        github: ngrigoriev
       - name: Nikita Kayurov
         email: nkayurov@newforma.com
         github: nkayurov-newforma
