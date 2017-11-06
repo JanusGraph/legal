@@ -167,12 +167,16 @@ companies:
 
   - name: GRAKN.AI
     people:
+      # CLA Manager
       - name: Haikal Pribadi
         email: haikal@grakn.ai
         github: haikalpribadi
       - name: Borislav Iordanov
         email: borislav@haikal.ai
         github: bolerio
+      - name: Domenico Corapi
+        email: domenico@haikal.ai
+        github: pluraliseseverythings
       - name: Filipe Peliz Pinto Teixeira
         email: filipe@grakn.ai
         github: fppt
