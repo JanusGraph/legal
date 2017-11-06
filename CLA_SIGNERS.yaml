@@ -137,6 +137,9 @@ companies:
       - name: Josh Perryman
         email: josh@experoinc.com
         github: joshpci
+      - name: Chris Pounds
+        email: chris.pounds@experoinc.com
+        github: chrislbs
 
   - name: Google
     people:
