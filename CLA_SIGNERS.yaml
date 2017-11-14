@@ -279,6 +279,9 @@ companies:
       - name: Susan Malaika
         email: malaika@us.ibm.com
         github: sumalaika
+      - name: Chris Hupman
+        email: chupman@us.ibm.com
+        github: chupman
 
   # Monogram can be found at:
   # * http://metagraph.io
