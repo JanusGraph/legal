@@ -36,3 +36,8 @@ for details.
 
 For now, the process is manual; in the future, we hope to have an electronic
 method for CLA signatures which will be much easier to manage.
+
+## License
+
+This repo uses a combination of [Apache 2.0](APACHE-2.0.txt) and
+[CC-BY-4.0](CC-BY-4.0.txt); see [`LICENSE.txt`](LICENSE.txt) for details.
