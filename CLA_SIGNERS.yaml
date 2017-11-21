@@ -15,6 +15,10 @@ people:
   - name: David Clement
     email: david.clement90@laposte.net
     github: davidclement90
+  # Default name/email used for GitHub merge commits in the past.
+  - name: davidclement90
+    email: david.clement90@laposte.net
+    github: davidclement90
   - name: Den Kovalevsky
     email: xdev.developer@gmail.com
     github: xdev-developer
