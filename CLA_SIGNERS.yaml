@@ -218,6 +218,7 @@ companies:
 
   - name: IBM
     people:
+      # CLA Manager
       - name: Jason Plurad
         email: pluradj@us.ibm.com
         github: pluradj
@@ -286,6 +287,9 @@ companies:
       - name: Chris Hupman
         email: chupman@us.ibm.com
         github: chupman
+      - name: Yihong Wang
+        email: yh.wang@ibm.com
+        github: yhwang
 
   # Monogram can be found at:
   # * http://metagraph.io
