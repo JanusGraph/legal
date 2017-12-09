@@ -175,6 +175,9 @@ companies:
       - name: Igor Bernstein
         email: igorbernstein@google.com
         github: igorbernstein2
+      - name: Solomon Duskis
+        email: sduskis@google.com
+        github: sduskis
 
   - name: GRAKN.AI
     people:
