@@ -255,9 +255,6 @@ companies:
       - name: Christopher J Quinones
         email: cjquinon@us.ibm.com
         github: cjquinon
-      - name: Keith Lohnes
-        email: krlohnes@us.ibm.com
-        github: krlohnes
       - name: David Pitera
         email: dpitera@us.ibm.com
         github: dpitera
@@ -462,3 +459,10 @@ companies:
       - name: Russ Frank
         email: rf@uber.com
         github: rf
+
+  - name: "<Stealth startup>"
+    people:
+      # CLA Manager
+      - name: Keith Lohnes
+        email: lohnesk@gmail.com
+        github: krlohnes
