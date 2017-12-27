@@ -12,9 +12,6 @@
 
 # Please keep this list sorted by name.
 people:
-  - name: Bruce Chang
-    email: chzh.nju@gmail.com 
-    github: changzhihua
   - name: David Clement
     email: david.clement90@laposte.net
     github: davidclement90
@@ -61,6 +58,9 @@ people:
   - name: Son Nguyen
     email: ngocson2vn@gmail.com
     github: ngocson2vn
+  - name: Zhihua Chang
+    email: chzh.nju@gmail.com
+    github: changzhihua
 
 bots:
   # Per https://github.com/web-flow:
