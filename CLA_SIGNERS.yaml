@@ -161,6 +161,22 @@ companies:
         email: michael@flux.io
         github: FluxMcarrier
 
+  - name: G DATA
+    people:
+      # CLA Manager
+      - name: Florian Hockmann
+        email: fh@florian-hockmann.de
+        github: FlorianHockmann
+      - name: Jan Jansen
+        email: jan.jansen@gdata.de
+        github: farodin91
+      - name: Kadir Bölükbasi
+        email: kdrblkbs@gmail.com
+        github: kdrblkbs
+      - name: Sebastian Schumann
+        email: sebastian.schumann@live.de
+        github: Schums
+
   - name: Google
     people:
       - name: Misha Brukman
