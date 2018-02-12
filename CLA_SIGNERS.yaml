@@ -203,6 +203,9 @@ companies:
       - name: Solomon Duskis
         email: sduskis@google.com
         github: sduskis
+      - name: Fei Xue
+        email: feixue@google.com
+        github: fxue
 
   - name: GRAKN.AI
     people:
