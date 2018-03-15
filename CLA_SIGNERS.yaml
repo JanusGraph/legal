@@ -277,6 +277,10 @@ companies:
       - name: David Pitera
         email: dpitera@us.ibm.com
         github: dpitera
+  # Default name/email used for GitHub merge commits in the past.
+      - name: dpitera
+        email: dpitera@us.ibm.com
+        github: dpitera
       - name: Jun Yang
         email: yangjuncn@cn.ibm.com
         github: terryjoy
@@ -310,6 +314,9 @@ companies:
       - name: Yihong Wang
         email: yh.wang@ibm.com
         github: yhwang
+      - name: Alex Li
+        email: alexli@au1.ibm.com
+        github: TitiHl
 
   # Monogram can be found at:
   # * http://metagraph.io
