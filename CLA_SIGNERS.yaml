@@ -318,6 +318,22 @@ companies:
         email: alexli@au1.ibm.com
         github: TitiHl
 
+  - name: Linkurious
+    people:
+      # CLA Manager
+      - name: Sebastien Heymann
+        email: seb@linkurio.us
+        github: sheymann
+      - name: David Rapin
+        email: david@linkurio.us
+        github: davidrapin
+      - name: Francesco Infante
+        email: francesco@linkurio.us
+        github: francescoinfante
+      - name: Cheick Diarra
+        email: cheick@linkurio.us
+        github: Diachk
+
   # Monogram can be found at:
   # * http://metagraph.io
   # * https://github.com/openmg
