@@ -461,6 +461,25 @@ companies:
         email: stephen.rosenthal@seeq.com
         github: srosenthal
 
+  - name: Times Internet
+    people:
+        # CLA Manager
+      - name: Pankaj Yadav
+        email: pankaj.yadav@timesinternet.in
+        github: pankajydv
+      - name: Rahul
+        email: rahul.s@timesinternet.in
+        github: rahul38888
+      - name: Anurag Anand
+        email: anurag.anand@timesinternet.in
+        github: anuraganand789
+      - name: Anamika Singh
+        email: anamika.singh@timesinternet.in
+        github: anamika121
+      - name: Himanshu Gangwar
+        email: himanshu.gangwar@timesinternet.in
+        github: himgang
+
   - name: Uber
     people:
       # CLA Manager
