@@ -443,6 +443,19 @@ companies:
         email: samant.maharaj@orionhealth.com
         github: samant-orionhealth
 
+  - name: Qihoo360
+    people:
+      # CLA Manager
+      - name: Feng Wang
+        email: wangfeng3@360.cn
+        github: woncius
+      - name: Zechao Zhuang
+        email: zhuangzechao@360.cn
+        github: Icaruszzc
+      - name: Zhiwei Jin
+        email: jinzhiwei@360.cn
+        github: imbajin
+
   - name: Seeq
     people:
       # CLA Manager
