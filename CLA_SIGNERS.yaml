@@ -101,6 +101,19 @@ bots:
 # Please keep the list sorted by company name.
 companies:
 
+  - name: Altoo AG
+    people:
+      # CLA Manager
+      - name: Stefan Thiel
+        email: sth@scaling.ch
+        github: sthielo
+      - name: Beat Sager
+        email: bsa@scaling.ch
+        github: BeatSager
+      - name: Jonas Lipp
+        email: jli@scaling.ch
+        github: jolipp
+
   - name: Amazon
     people:
       # CLA Manager
