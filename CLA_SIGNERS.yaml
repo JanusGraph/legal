@@ -550,6 +550,16 @@ companies:
         email: rf@uber.com
         github: rf
 
+  - name: VMware
+    people:
+      # CLA Manager
+      - name: Lauren Britton
+        email: lbritton@vmware.com
+        github: lbritton
+      - name: Joey Zhou
+        email: joeyz@vmware.com
+        github: yxzhou
+
   - name: "<Stealth startup>"
     people:
       # CLA Manager
