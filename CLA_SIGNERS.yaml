@@ -342,6 +342,9 @@ companies:
       - name: Alex Li
         email: alexli@au1.ibm.com
         github: TitiHl
+      - name: Debasish Kanhar
+        email: dekanhar@in.ibm.com
+        github: debasishdebs
 
   - name: Linkurious
     people:
