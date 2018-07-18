@@ -241,18 +241,21 @@ companies:
       - name: Haikal Pribadi
         email: haikal@grakn.ai
         github: haikalpribadi
-      - name: Filipe Peliz Pinto Teixeira
-        email: filipe@grakn.ai
-        github: fppt
-      - name: Felix Chapman
-        email: felix@grakn.ai
-        github: aelred
-      - name: Jason Liu
-        email: jason@grakn.ai
-        github: duckofyork
+      - name: Marco Scoppetta
+        email: marco@grakn.ai
+        github: marco-scoppetta
+      - name: Ganeshwara Hananda
+        email: ganesh@grakn.ai
+        github: lolski
+      - name: Joshua Send
+        email: joshua@grakn.ai
+        github: flyingsilverfin
       - name: Kasper Piskorski
         email: kasper@grakn.ai
         github: kasper-piskorski
+      - name: Jyothish Soman
+        email: jyothish@grakn.ai
+        github: jyosoman
 
   - name: Hortonworks
     people:
