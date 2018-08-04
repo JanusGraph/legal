@@ -131,7 +131,7 @@ companies:
         email: brandis@amazon.com
         github: brandis
       - name: Alexander Patrikalakis
-        email: amcp@amazon.co.jp
+        email: amcp@amazon.com
         github: amcp
       # Default email used for merges via GitHub web UI.
       - name: Alexander Patrikalakis
