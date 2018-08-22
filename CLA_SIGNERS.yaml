@@ -348,6 +348,9 @@ companies:
       - name: Debasish Kanhar
         email: dekanhar@in.ibm.com
         github: debasishdebs
+      - name: Christopher Jackson
+        email: chris.jackson@us.ibm.com
+        github: blindenvy
 
   - name: Linkurious
     people:
