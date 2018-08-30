@@ -305,7 +305,7 @@ companies:
       - name: David Pitera
         email: dpitera@us.ibm.com
         github: dpitera
-  # Default name/email used for GitHub merge commits in the past.
+      # Default name/email used for GitHub merge commits in the past.
       - name: dpitera
         email: dpitera@us.ibm.com
         github: dpitera
@@ -337,6 +337,10 @@ companies:
         email: malaika@us.ibm.com
         github: sumalaika
       - name: Chris Hupman
+        email: chupman@us.ibm.com
+        github: chupman
+      # Default name/email used for GitHub merge commits in the past.
+      - name: chupman
         email: chupman@us.ibm.com
         github: chupman
       - name: Yihong Wang
