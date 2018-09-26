@@ -479,6 +479,13 @@ companies:
         email: jinzhiwei@360.cn
         github: imbajin
 
+  - name: Rebaze
+    people:
+      # CLA Manager
+      - name: Toni Menzel
+        email: toni.menzel@rebaze.com
+        github: tonit
+
   - name: Seeq
     people:
       # CLA Manager
