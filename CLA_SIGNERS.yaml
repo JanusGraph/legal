@@ -319,9 +319,6 @@ companies:
       - name: Jun Yang
         email: yangjuncn@cn.ibm.com
         github: terryjoy
-      - name: Ruoyu Wang
-        email: rywang@cn.ibm.com
-        github: ruoyuw
       - name: Jian Xu
         email: bjxujian@cn.ibm.com
         github: bjxujian
@@ -362,6 +359,9 @@ companies:
       - name: Christopher Jackson
         email: chris.jackson@us.ibm.com
         github: blindenvy
+      - name: Peter May
+        email: Peter.May@ibm.com
+        github: pmay804
 
   - name: Linkurious
     people:
