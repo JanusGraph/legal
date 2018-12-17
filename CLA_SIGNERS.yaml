@@ -375,6 +375,13 @@ companies:
         email: Peter.May@ibm.com
         github: pmay804
 
+  - name: Informatica
+    people:
+      # CLA manager
+      - name: Mike Beaubien
+        email: mbbeaubi@umich.edu
+        github: mbbeaubi
+
   - name: Linkurious
     people:
       # CLA Manager
