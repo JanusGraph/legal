@@ -5,6 +5,14 @@
 [travis-shield]: https://travis-ci.org/JanusGraph/legal.svg?branch=master
 [travis-link]: https://travis-ci.org/JanusGraph/legal
 
+Table of contents
+
+* [Contributing](#contributing)
+* [Creating a new repo](#creating-a-new-repo)
+* [License](#license)
+
+## Contributing
+
 Before you can contribute to JanusGraph, please sign the Contributor License
 Agreement (CLA). This is not a copyright *assignment*, it simply gives the
 JanusGraph project the permission and license to use and redistribute your
@@ -36,6 +44,19 @@ for details.
 
 For now, the process is manual; in the future, we hope to have an electronic
 method for CLA signatures which will be much easier to manage.
+
+## Creating a new repo
+
+To create a new repo, copy the starter set of files from the
+[`new-repo`](new-repo) directory and modify the `README.md` accordingly.
+
+Then, make sure the following steps are done to ensure automated CLA
+verification:
+
+* add @JanusGraph/bots as "writer" to each new repo
+* add `cla: yes` and `cla: no`
+  [labels](https://github.com/JanusGraph/legal/labels) - be sure to use the same
+  colors for visual consistency
 
 ## License
 
