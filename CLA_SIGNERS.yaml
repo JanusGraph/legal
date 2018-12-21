@@ -168,7 +168,10 @@ companies:
 
   - name: Civitas Learning
     people:
-      # CLA Manager: Pierre Padovani (no email/GitHub id provided)
+      # CLA Manager
+      - name: Pierre Padovani
+        email: pierre.padovani@civitaslearning.com
+        github: ppadovani
       - name: Paul Khermouch
         email: paul.khermouch@civitaslearning.com
         github: paul-k-civitas
