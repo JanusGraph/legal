@@ -29,7 +29,8 @@ contributions as part of the project.
 
 **IMPORTANT:** DO NOT submit a pull request to this repo to sign the CLA. At
 this time, signing the CLA at this time involves filling out the ICLA or CCLA
-paperwork, scanning it in, and sending it to janusgraph-cla@googlegroups.com .
+paperwork, scanning it in, and sending it to **janusgraph-cla (at)
+googlegroups.com** .
 
 Whether you sign the CCLA or the ICLA, for each contributor, please include:
 
