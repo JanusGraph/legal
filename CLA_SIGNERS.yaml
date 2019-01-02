@@ -292,9 +292,9 @@ companies:
   - name: Huawei
     people:
       # CLA Manager
-      - name: Demai Ni
-        email: nidmgg@gmail.com
-        github: nidmgh
+      - name: Minqi Zhou
+        email: zhouminqi@huawei.com
+        github: polpo1980
 
   - name: IBM
     people:
