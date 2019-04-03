@@ -515,6 +515,13 @@ companies:
         email: samant.maharaj@orionhealth.com
         github: samant-orionhealth
 
+  - name: Pontus Networks
+    people:
+      # CLA Manager
+      - name: Leonardo Martins
+        email: lmartins@pontusnetworks.com
+        github: pontusvision
+
   - name: Qihoo360
     people:
       # CLA Manager
