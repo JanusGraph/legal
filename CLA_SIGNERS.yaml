@@ -410,6 +410,9 @@ companies:
       - name: Peter May
         email: Peter.May@ibm.com
         github: pmay804
+      - name: Erin Cornett
+        email: erin.cornett@ibm.com
+        github: erinc1915
 
   - name: Informatica
     people:
