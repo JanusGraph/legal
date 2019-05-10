@@ -189,6 +189,16 @@ companies:
         email: paul.khermouch@civitaslearning.com
         github: paul-k-civitas
 
+  - name: Comcast
+    people:
+      # CLA Manager
+      - name: Pylyp Mykhailov
+        email: Pylyp_Mykhailov@comcast.com
+        github: ph1lm
+      - name: Phillip Heller
+        email: Phillip_Heller@comcast.com
+        github: pheller
+
   - name: Expero
     people:
       - name: Sebastian Good
