@@ -23,9 +23,13 @@ except:
     from third_party.python import yaml
 
 
-def ParseYaml(filename):
+def ParseYamlString(data):
+    return yaml.safe_load(data)
+
+
+def ParseYamlFile(filename):
     with open(filename) as yaml_input:
-        return yaml.safe_load(yaml_input.read())
+        return ParseYamlString(yaml_input.read())
 
 
 def PrintStatistics(data):
@@ -50,7 +54,7 @@ def PrintStatistics(data):
 
     print('Total signers: %d' % total_people)
 
-def ValidateFile(data):
+def ValidateData(data):
     def ValidateAccounts(accounts):
         status_code = 0
         accounts_keys = ('name', 'email', 'github')
@@ -59,6 +63,11 @@ def ValidateFile(data):
                 status_code = 1
                 sys.stderr.write('The only allowed and required keys for people/bot accounts are: %s.\n' % str(accounts_keys))
                 sys.stderr.write('Invalid account record: %s\n\n' % account)
+            for key in accounts_keys:
+                # Covers value being either `None` or empty string.
+                if not account[key]:
+                    status_code = 2
+                    sys.stderr.write('The key "%s" is empty in account (%s)\n' % (key, account))
         return status_code
 
     status_code = 0
@@ -95,12 +104,12 @@ def main(argv):
 
     command = argv[1]
     filename = argv[2]
-    data = ParseYaml(filename)
+    data = ParseYamlFile(filename)
 
     if command == 'stats':
         sys.exit(PrintStatistics(data))
     elif command == 'validate':
-        sys.exit(ValidateFile(data))
+        sys.exit(ValidateData(data))
     else:
         sys.stderr.write('Invalid command: %s\n' % command)
         ShowSyntax(program)

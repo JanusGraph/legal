@@ -34,3 +34,4 @@ validate:
 	$(VERB) $(CLA_SCRIPT) validate $(CLA_SIGNERS)
 
 test: validate
+	$(VERB) python -m unittest discover -p '*_test.py'
