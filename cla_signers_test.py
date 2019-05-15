@@ -23,7 +23,36 @@ class ClaSignersTest(unittest.TestCase):
     def _ValidateData(self, data):
         return cla_signers.ValidateData(cla_signers.ParseYamlString(data))
 
-    def testValidData(self):
+    def testValidPeopleOnly(self):
+        data = """\
+people:
+  - name: foo
+    email: bar
+    github: baz
+"""
+        self.assertEqual(0, self._ValidateData(data))
+
+    def testValidBotsOnly(self):
+        data = """\
+bots:
+  - name: foo
+    email: bar
+    github: baz
+"""
+        self.assertEqual(0, self._ValidateData(data))
+
+    def testValidCompaniesOnly(self):
+        data = """\
+companies:
+  - name: Foo
+    people:
+     - name: foo2
+       email: bar2
+       github: baz2
+"""
+        self.assertEqual(0, self._ValidateData(data))
+
+    def testValidCompleteData(self):
         data = """\
 people:
   - name: foo
@@ -44,24 +73,19 @@ companies:
 """
         self.assertEqual(0, self._ValidateData(data))
 
-    def testEmptyStringInvalid(self):
+    def testPeopleSectionEmptyStringInvalid(self):
         data = """\
 people:
   - name:
     email:
     github:
+"""
+        self.assertNotEqual(0, self._ValidateData(data))
 
-bots:
-  - name:
-    email:
-    github:
-
-companies:
-  - name:
-    people:
-     - name:
-       email:
-       github:
+    def testPeopleSectionEmptyInvalid(self):
+        data = """\
+people:
+  -
 """
         self.assertNotEqual(0, self._ValidateData(data))
 
