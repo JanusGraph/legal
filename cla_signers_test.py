@@ -30,7 +30,8 @@ people:
     email: bar
     github: baz
 """
-        self.assertEqual(0, self._ValidateData(data))
+        valid, _ = self._ValidateData(data)
+        self.assertTrue(valid)
 
     def testValidBotsOnly(self):
         data = """\
@@ -39,7 +40,8 @@ bots:
     email: bar
     github: baz
 """
-        self.assertEqual(0, self._ValidateData(data))
+        valid, _ = self._ValidateData(data)
+        self.assertTrue(valid)
 
     def testValidCompaniesOnly(self):
         data = """\
@@ -50,7 +52,8 @@ companies:
        email: bar2
        github: baz2
 """
-        self.assertEqual(0, self._ValidateData(data))
+        valid, _ = self._ValidateData(data)
+        self.assertTrue(valid)
 
     def testValidCompleteData(self):
         data = """\
@@ -71,7 +74,8 @@ companies:
        email: bar2
        github: baz2
 """
-        self.assertEqual(0, self._ValidateData(data))
+        valid, _ = self._ValidateData(data)
+        self.assertTrue(valid)
 
     def testPeopleSectionEmptyStringInvalid(self):
         data = """\
@@ -80,14 +84,54 @@ people:
     email:
     github:
 """
-        self.assertNotEqual(0, self._ValidateData(data))
+        valid, _ = self._ValidateData(data)
+        self.assertFalse(valid)
 
     def testPeopleSectionEmptyInvalid(self):
         data = """\
 people:
   -
 """
-        self.assertNotEqual(0, self._ValidateData(data))
+        valid, _ = self._ValidateData(data)
+        self.assertFalse(valid)
+
+    def testBotsSectionEmptyStringInvalid(self):
+        data = """\
+bots:
+  - name:
+    email:
+    github:
+"""
+        valid, _ = self._ValidateData(data)
+        self.assertFalse(valid)
+
+    def testBotsSectionEmptyInvalid(self):
+        data = """\
+bots:
+  -
+"""
+        valid, _ = self._ValidateData(data)
+        self.assertFalse(valid)
+
+    def testCompaniesSectionEmptyStringInvalid(self):
+        data = """\
+companies:
+  - name:
+    people:
+     - name:
+       email:
+       github:
+"""
+        valid, _ = self._ValidateData(data)
+        self.assertFalse(valid)
+
+    def testCompaniesSectionEmptyInvalid(self):
+        data = """\
+companies:
+  -
+"""
+        valid, _ = self._ValidateData(data)
+        self.assertFalse(valid)
 
 
 if __name__ == '__main__':
