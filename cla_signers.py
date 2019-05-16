@@ -54,26 +54,28 @@ def PrintStatistics(data):
 
     print('Total signers: %d' % total_people)
 
-def ValidateData(data):
-    def ValidateAccounts(accounts):
-        status_code = 0
-        accounts_keys = ('name', 'email', 'github')
-        for account in accounts:
-            if not account:
-                status_code = 1
-                sys.stderr.write('Invalid empty account found\n')
-                continue
-            if sorted(account.keys()) != sorted(accounts_keys):
-                status_code = 1
-                sys.stderr.write('The only allowed and required keys for people/bot accounts are: %s.\n' % str(accounts_keys))
-                sys.stderr.write('Invalid account record: %s\n\n' % account)
-            for key in accounts_keys:
-                # Covers value being either `None` or empty string.
-                if not account[key]:
-                    status_code = 2
-                    sys.stderr.write('The key "%s" is empty in account (%s)\n' % (key, account))
-        return status_code
 
+def ValidateAccounts(accounts):
+    status_code = 0
+    accounts_keys = ('name', 'email', 'github')
+    for account in accounts:
+        if not account:
+            status_code = 1
+            sys.stderr.write('Invalid empty account found\n')
+            continue
+        if sorted(account.keys()) != sorted(accounts_keys):
+            status_code = 1
+            sys.stderr.write('The only allowed and required keys for people/bot accounts are: %s.\n' % str(accounts_keys))
+            sys.stderr.write('Invalid account record: %s\n\n' % account)
+        for key in accounts_keys:
+            # Covers value being either `None` or empty string.
+            if not account[key]:
+                status_code = 2
+                sys.stderr.write('The key "%s" is empty in account (%s)\n' % (key, account))
+    return status_code
+
+
+def ValidateData(data):
     status_code = 0
 
     if 'people' in data:
