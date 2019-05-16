@@ -16,6 +16,14 @@ group: travis_latest
 sudo: false
 language: python
 
-script:
-  - make pip-install
-  - make test
+jobs:
+  include:
+    - stage: "test"
+      name: "Lint Check"
+      script:
+        - make pip-install
+        - make lint
+    - name: "Unit Tests"
+      script:
+        - make pip-install
+        - make test

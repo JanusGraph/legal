@@ -30,6 +30,9 @@ stats:
 pip-install:
 	$(VERB) pip install -r requirements.txt -t $(PYTHON_DIR)
 
+lint:
+	$(VERB) pycodestyle *.py
+
 validate:
 	$(VERB) $(CLA_SCRIPT) validate $(CLA_SIGNERS)
 
