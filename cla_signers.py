@@ -54,37 +54,51 @@ def PrintStatistics(data):
 
     print('Total signers: %d' % total_people)
 
-def ValidateData(data):
-    def ValidateAccounts(accounts):
-        status_code = 0
-        accounts_keys = ('name', 'email', 'github')
-        for account in accounts:
-            if sorted(account.keys()) != sorted(accounts_keys):
-                status_code = 1
-                sys.stderr.write('The only allowed and required keys for people/bot accounts are: %s.\n' % str(accounts_keys))
-                sys.stderr.write('Invalid account record: %s\n\n' % account)
-            for key in accounts_keys:
-                # Covers value being either `None` or empty string.
-                if not account[key]:
-                    status_code = 2
-                    sys.stderr.write('The key "%s" is empty in account (%s)\n' % (key, account))
-        return status_code
 
+def ValidateAccounts(accounts):
+    status_code = 0
+    accounts_keys = ('name', 'email', 'github')
+    for account in accounts:
+        if not account:
+            status_code = 1
+            sys.stderr.write('Invalid empty account found\n')
+            continue
+        if sorted(account.keys()) != sorted(accounts_keys):
+            status_code = 1
+            sys.stderr.write('The only allowed and required keys for people/bot accounts are: %s.\n' % str(accounts_keys))
+            sys.stderr.write('Invalid account record: %s\n\n' % account)
+        for key in accounts_keys:
+            # Covers value being either `None` or empty string.
+            if not account[key]:
+                status_code = 2
+                sys.stderr.write('The key "%s" is empty in account (%s)\n' % (key, account))
+    return status_code
+
+
+def ValidateData(data):
     status_code = 0
 
-    ValidateAccounts(data['people'])
-    ValidateAccounts(data['bots'])
+    if 'people' in data:
+        status_code = ValidateAccounts(data['people'])
+        if status_code != 0:
+            return status_code
 
-    company_keys = ('name', 'people')
-    for company in data['companies']:
-        if sorted(company.keys()) != sorted(company_keys):
-            status_code = 2
-            sys.stderr.write('The only allowed and required keys for `company` are: %s.\n' % str(company_keys))
-            sys.stderr.write('Invalid company record: %s\n\n' % company)
-            continue
-        people_status = ValidateAccounts(company['people'])
-        if people_status != 0 and status_code == 0:
-            status_code = people_status
+    if 'bots' in data:
+        status_code = ValidateAccounts(data['bots'])
+        if status_code != 0:
+            return status_code
+
+    if 'companies' in data:
+        company_keys = ('name', 'people')
+        for company in data['companies']:
+            if sorted(company.keys()) != sorted(company_keys):
+                status_code = 2
+                sys.stderr.write('The only allowed and required keys for `company` are: %s.\n' % str(company_keys))
+                sys.stderr.write('Invalid company record: %s\n\n' % company)
+                continue
+            people_status = ValidateAccounts(company['people'])
+            if people_status != 0 and status_code == 0:
+                status_code = people_status
 
     return status_code
 
