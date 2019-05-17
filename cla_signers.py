@@ -56,51 +56,68 @@ def PrintStatistics(data):
 
 
 def ValidateAccounts(accounts):
-    status_code = 0
+    """Returns whether given list of accounts are valid, with errors if not.
+
+    This function works on a single set of accounts, whether people or bots.
+
+    Args:
+        accounts ([dict]): a list of accounts to validate
+
+    Returns:
+        (bool, [str]) or (bool, None): first element is whethe the data is
+        valid; second parameter is list of error strings if data is not valid.
+    """
     accounts_keys = ('name', 'email', 'github')
     for account in accounts:
         if not account:
-            status_code = 1
-            sys.stderr.write('Invalid empty account found\n')
-            continue
+            return (False, ['Invalid empty account found'])
         if sorted(account.keys()) != sorted(accounts_keys):
-            status_code = 1
-            sys.stderr.write('The only allowed and required keys for people/bot accounts are: %s.\n' % str(accounts_keys))
-            sys.stderr.write('Invalid account record: %s\n\n' % account)
+            return (False, ['The only allowed and required keys for people/bot accounts are: %s.' % str(accounts_keys),
+                            'Invalid account record: %s' % account])
         for key in accounts_keys:
             # Covers value being either `None` or empty string.
             if not account[key]:
-                status_code = 2
-                sys.stderr.write('The key "%s" is empty in account (%s)\n' % (key, account))
-    return status_code
+                return (False, 'The key "%s" is empty in account (%s)\n' % (key, account))
+    return (True, None)
 
 
 def ValidateData(data):
-    status_code = 0
+    """Returns whether data is valid, with errors if not.
 
+    This function works on an entire config file, including individuals, bots,
+    and companies.
+
+    Args:
+        data (dict): full config file
+
+    Returns:
+        (bool, [str]) or (bool, None): first element is whethe the data is
+        valid; second parameter is list of error strings if data is not valid.
+    """
     if 'people' in data:
-        status_code = ValidateAccounts(data['people'])
-        if status_code != 0:
-            return status_code
+        valid, errors = ValidateAccounts(data['people'])
+        if not valid:
+            return (False, errors)
 
     if 'bots' in data:
-        status_code = ValidateAccounts(data['bots'])
-        if status_code != 0:
-            return status_code
+        valid, errors = ValidateAccounts(data['bots'])
+        if not valid:
+            return (False, errors)
 
     if 'companies' in data:
         company_keys = ('name', 'people')
         for company in data['companies']:
+            if not company:
+                return (False, ['Invalid company found'])
             if sorted(company.keys()) != sorted(company_keys):
-                status_code = 2
-                sys.stderr.write('The only allowed and required keys for `company` are: %s.\n' % str(company_keys))
-                sys.stderr.write('Invalid company record: %s\n\n' % company)
-                continue
-            people_status = ValidateAccounts(company['people'])
-            if people_status != 0 and status_code == 0:
-                status_code = people_status
+                return (False, ['The only allowed and required keys for `company` are: %s.' % str(company_keys),
+                                'Invalid company record: %s' % company])
+            valid, errors = ValidateAccounts(company['people'])
+            if not valid:
+                return (False, errors)
 
-    return status_code
+    return (True, None)
+
 
 def ShowSyntax(program):
     sys.stderr.write("""\
@@ -123,7 +140,11 @@ def main(argv):
     if command == 'stats':
         sys.exit(PrintStatistics(data))
     elif command == 'validate':
-        sys.exit(ValidateData(data))
+        valid, errors = ValidateData(data)
+        if not valid:
+            for err in errors:
+                sys.stderr.write('%s\n' % err)
+                sys.exit(1)
     else:
         sys.stderr.write('Invalid command: %s\n' % command)
         ShowSyntax(program)
