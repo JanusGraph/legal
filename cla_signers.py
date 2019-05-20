@@ -19,7 +19,7 @@
 import sys
 try:
     import yaml
-except:
+except ImportError:
     from third_party.python import yaml
 
 
@@ -44,11 +44,12 @@ def PrintStatistics(data):
         # company to handle multiple email addresses per person for various
         # reasons.
         #
-        # This eliminates overcounting by creating a set of all GitHub user ids,
-        # such that duplicate entries for a single person will be eliminated
-        # since their GitHub id is unique, even if the spelling of their name
-        # varies.
-        num_people = len(set([person['github'] for person in company['people']]))
+        # This eliminates overcounting by creating a set of all GitHub user
+        # ids, such that duplicate entries for a single person will be
+        # eliminated since their GitHub id is unique, even if the spelling
+        # of their name varies.
+        people = company['people']
+        num_people = len(set([person['github'] for person in people]))
         print('  %s: %s' % (company['name'], num_people))
         total_people += num_people
 
@@ -72,12 +73,15 @@ def ValidateAccounts(accounts):
         if not account:
             return (False, ['Invalid empty account found'])
         if sorted(account.keys()) != sorted(accounts_keys):
-            return (False, ['The only allowed and required keys for people/bot accounts are: %s.' % str(accounts_keys),
+            return (False, ['The only allowed and required keys for '
+                            'people/bot accounts are: '
+                            '%s.' % str(accounts_keys),
                             'Invalid account record: %s' % account])
         for key in accounts_keys:
             # Covers value being either `None` or empty string.
             if not account[key]:
-                return (False, 'The key "%s" is empty in account (%s)\n' % (key, account))
+                return (False, 'The key '
+                        '"%s" is empty in account (%s)\n' % (key, account))
     return (True, None)
 
 
@@ -110,7 +114,8 @@ def ValidateData(data):
             if not company:
                 return (False, ['Invalid company found'])
             if sorted(company.keys()) != sorted(company_keys):
-                return (False, ['The only allowed and required keys for `company` are: %s.' % str(company_keys),
+                return (False, ['The only allowed and required keys for '
+                                '`company` are: %s.' % str(company_keys),
                                 'Invalid company record: %s' % company])
             valid, errors = ValidateAccounts(company['people'])
             if not valid:
@@ -126,6 +131,7 @@ Syntax: %s [command] [file]
 Commands:
   validate: verify invariants in given config file
 """ % program)
+
 
 def main(argv):
     program = argv[0]
