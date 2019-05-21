@@ -199,6 +199,21 @@ companies:
         email: Phillip_Heller@comcast.com
         github: pheller
 
+  - name: eBay
+    people:
+      # CLA Manager
+      - name: Jing Chen He
+        email: jhe2@ebay.com
+        github: jerryjch
+      # Default email used for merges via GitHub web UI.
+      - name: Jerry He
+        email: jerryjch@apache.org
+        github: jerryjch
+      # CLA Manager
+      - name: Brian Haslam
+        email: bhaslam@ebay.com
+        github: BrianHaslam
+
   - name: Expero
     people:
       - name: Sebastian Good
@@ -348,13 +363,6 @@ companies:
       - name: Jason Plurad
         email: pluradj@users.noreply.github.com
         github: pluradj
-      - name: Jerry He
-        email: jinghe@us.ibm.com
-        github: jerryjch
-      # Default email used for merges via GitHub web UI.
-      - name: Jerry He
-        email: jerryjch@apache.org
-        github: jerryjch
       - name: Scott McQuillan
         email: scott.mcquillan@uk.ibm.com
         github: smcquillan
