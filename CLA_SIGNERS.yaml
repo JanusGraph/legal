@@ -569,6 +569,13 @@ companies:
         email: toni.menzel@rebaze.com
         github: tonit
 
+  - name: ScyllaDB
+    people:
+      # CLA Manager
+      - name: Avi Kivity
+        email: avi@scylladb.com
+        github: avikivity
+
   - name: Seeq
     people:
       # CLA Manager
