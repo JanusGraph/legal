@@ -107,30 +107,6 @@ people:
     email: chzh.nju@gmail.com
     github: changzhihua
 
-bots:
-  # Per https://github.com/web-flow:
-  #
-  #     "This account is the Git committer for all web commits
-  #     (merge/revert/edit/etc...) made on GitHub.com."
-  #
-  # This is a special GitHub account that needs to be whitelisted to enable
-  # actions taken by contributors via the GitHub web UI to be processed as
-  # having cleared the CLA verification. All Git commits have an "author" and a
-  # "committer" and we verify that both appear in this file.
-  #
-  # In the case of users making changes via the GitHub web UI, the "author" is
-  # the person who made the change, but the "committer" rather than being the
-  # same person is actually "web-flow" and unless it's whitelisted as done here,
-  # the overall PR will fail the CLA verification check.
-  #
-  # We avoid adding `@web-flow` to the `people` list (above) because:
-  # * there isn't a real person behind this account and no ICLA was signed;
-  # * being positioned in a different list clearly specifies that this is a
-  #   special case and an exception to the rules.
-  - name: GitHub
-    email: noreply@github.com
-    github: web-flow
-
 # Please keep the list sorted by company name.
 companies:
 
