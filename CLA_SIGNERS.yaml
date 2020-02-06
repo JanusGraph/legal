@@ -388,13 +388,6 @@ companies:
       - name: Susan Malaika
         email: malaika@us.ibm.com
         github: sumalaika
-      - name: Chris Hupman
-        email: chupman@us.ibm.com
-        github: chupman
-      # Default name/email used for GitHub merge commits in the past.
-      - name: chupman
-        email: chupman@us.ibm.com
-        github: chupman
       - name: Yihong Wang
         email: yh.wang@ibm.com
         github: yhwang
