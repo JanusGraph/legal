@@ -282,15 +282,6 @@ companies:
         email: jyothish@grakn.ai
         github: jyosoman
 
-  - name: Hortonworks
-    people:
-      - name: Alan F. Gates
-        email: alanfgates@gmail.com
-        github: alanfgates
-      - name: Simon Elliston Ball
-        email: simon@simonellistonball.com
-        github: simonellistonball
-
   - name: Huawei
     people:
       # CLA Manager
