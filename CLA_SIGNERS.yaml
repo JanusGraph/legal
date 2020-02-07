@@ -260,36 +260,6 @@ companies:
         email: Prakhar.x.Agrawal@gs.com
         github: codemonk5
 
-  - name: Google
-    people:
-      - name: Misha Brukman
-        email: mbrukman@google.com
-        github: mbrukman
-      - name: Lindsay Smith
-        email: lindsaysmith@google.com
-        github: lindsayismith
-      - name: Mike Giambalvo
-        email: heathkit@google.com
-        github: mgiambalvo
-      - name: Max Luebbe
-        email: maxluebbe@google.com
-        github: maxluebbe
-      - name: Ramesh Dharan
-        email: dharan@google.com
-        github: rameshdharan
-      - name: Gary Elliott
-        email: garyelliott@google.com
-        github: garye
-      - name: Igor Bernstein
-        email: igorbernstein@google.com
-        github: igorbernstein2
-      - name: Solomon Duskis
-        email: sduskis@google.com
-        github: sduskis
-      - name: Fei Xue
-        email: feixue@google.com
-        github: fxue
-
   - name: GRAKN.AI
     people:
       # CLA Manager
