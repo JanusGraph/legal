@@ -224,13 +224,6 @@ companies:
         email: chris.pounds@experoinc.com
         github: chrislbs
 
-  - name: Flux
-    people:
-      # CLA Manager
-      - name: Michael Carrier
-        email: michael@flux.io
-        github: FluxMcarrier
-
   - name: G DATA
     people:
       # CLA Manager
