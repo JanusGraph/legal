@@ -127,17 +127,6 @@ companies:
       - name: Brandi Duffy
         email: brandis@amazon.com
         github: brandis
-      - name: Alexander Patrikalakis
-        email: amcp@amazon.com
-        github: amcp
-      # Previous email address used while working in Japan.
-      - name: Alexander Patrikalakis
-        email: amcp@amazon.co.jp
-        github: amcp
-      # Default email used for merges via GitHub web UI.
-      - name: Alexander Patrikalakis
-        email: amcp@mit.edu
-        github: amcp
       - name: Michael Rodaitis
         email: rodaitis@amazon.com
         github: mrodaitis
