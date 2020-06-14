@@ -207,19 +207,6 @@ companies:
         email: chris.pounds@experoinc.com
         github: chrislbs
 
-  - name: G DATA
-    people:
-      # CLA Manager
-      - name: Florian Hockmann
-        email: fh@florian-hockmann.de
-        github: FlorianHockmann
-      - name: Jan Jansen
-        email: jan.jansen@gdata.de
-        github: farodin91
-      - name: Kadir Bölükbasi
-        email: kdrblkbs@gmail.com
-        github: kdrblkbs
-
   - name: Goldman Sachs
     people:
       # CLA Manager
