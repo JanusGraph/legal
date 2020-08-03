@@ -335,13 +335,6 @@ companies:
         email: erin.cornett@ibm.com
         github: erinc1915
 
-  - name: Informatica
-    people:
-      # CLA manager
-      - name: Mike Beaubien
-        email: mbbeaubi@umich.edu
-        github: mbbeaubi
-
   - name: Linkurious
     people:
       # CLA Manager
