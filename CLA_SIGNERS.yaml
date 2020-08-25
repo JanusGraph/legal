@@ -43,13 +43,6 @@ people:
   - name: Dylan Bethune-Waddell
     email: dylan.bethune.waddell@mail.utoronto.ca
     github: dylanht
-  - name: Evgenii Ignatev
-    email: yevgeniy.ignatyev@gmail.com
-    github: YevIgn
-  # Previous spelling of developer's name
-  - name: Evgeniy Ignatiev
-    email: yevgeniy.ignatyev@gmail.com
-    github: YevIgn
   - name: Filippo Balicchia
     email: fbalicchia@gmail.com
     github: fbalicchia
