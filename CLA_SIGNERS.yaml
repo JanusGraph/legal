@@ -172,6 +172,20 @@ companies:
       - name: Brian Haslam
         email: bhaslam@ebay.com
         github: BrianHaslam
+      - name: Jun Li
+        email: junli5@ebay.com
+        github: jlazdw
+      # Default email used for merges via GitHub web UI.
+      - name: Jun Li
+        email: jltzdw@gmail.com
+        github: jlazdw
+      - name: Hieu Nguyen
+        email: hieunguyen@ebay.com
+        github: ntrhieu89
+      # Default email used for merges via GitHub web UI.
+      - name: Hieu Nguyen
+        email: ntrhieu89@gmail.com
+        github: ntrhieu89
 
   - name: Expero
     people:
